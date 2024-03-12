@@ -40,6 +40,8 @@ padding: 10px;
     color: white;
     text-align: center;
     padding: 10px;
+    left: 0;
+    top: 0;
 }
 
 .btn.btn-success.my-2.my-sm-0{
@@ -54,4 +56,8 @@ position: relative;
 
 .loader img{
 position: absolute; 
+left: 50%;
+top: 50%;
+width: 30%;
+transform: translate(-50%, -50%);
 }
