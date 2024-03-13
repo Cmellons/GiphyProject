@@ -1,4 +1,3 @@
-
 searchBTN = document.querySelector('.search')
 inpTAG = document.querySelector('.inpSearch')
 row1 = document.querySelector('.row1')
@@ -17,7 +16,7 @@ function generateGifHTML(result) {
     `
 
         row1.innerHTML += html;
-        if (loadCountImage === 12) {
+        if (loadCountImage === 24) {
             console.log(loadCountImage)
             hideLoader()
         }
@@ -32,7 +31,7 @@ function generateGifHTML(result) {
 
 
 searchBTN.addEventListener('click', function () {
-    url = `https://api.giphy.com/v1/gifs/search?q=${inpTAG.value}&api_key=SbwrnGqBbHSNIRmqVhPBCILWXxrqzUyj&limit=12`
+    url = `https://api.giphy.com/v1/gifs/search?q=${inpTAG.value}&api_key=SbwrnGqBbHSNIRmqVhPBCILWXxrqzUyj&limit=24`
     fetch(url).then(function (response) {
         return response.json();
     }).then(function (data) {
