@@ -35,15 +35,13 @@ padding: 10px;
 
 .row1 .col1 a{
    background: linear-gradient(to right, rgb(97, 87, 255), rgb(0, 230, 204), rgb(97, 87, 255));
-    width: 50%; 
+    width: 70%; 
     margin: 10px auto;
     color: white;
     text-align: center;
     padding: 10px;
-    left: 0;
-    top: 0;
+    display: flex;
 }
-
 .btn.btn-success.my-2.my-sm-0{
     background: linear-gradient(to right, rgb(97, 87, 255), rgb(0, 230, 204), rgb(97, 87, 255));
 }
