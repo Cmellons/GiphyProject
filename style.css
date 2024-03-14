@@ -6,10 +6,16 @@ box-sizing: border-box;
 
 body{
     background-color: #111!important;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .navbar{
     background-color: #222!important;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .row1{

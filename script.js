@@ -41,7 +41,7 @@ function generateGifHTML(result) {
 
 
 searchBTN.addEventListener('click', function () {
-    url = `https://api.giphy.com/v1/gifs/search?q=${inpTAG.value}&api_key=SbwrnGqBbHSNIRmqVhPBCILWXxrqzUyj&limit=24`
+    url = `https://api.giphy.com/v1/gifs/search?q=${inpTAG.value}&api_key=${YOUR_API_KEY}&limit=24`
     fetch(url).then(function (response) {
         return response.json();
     }).then(function (data) {
