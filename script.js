@@ -1,9 +1,19 @@
+
+
 searchBTN = document.querySelector('.search')
 inpTAG = document.querySelector('.inpSearch')
 row1 = document.querySelector('.row1')
-let loadCountImage = 1
-function generateGifHTML(result) {
+let loadCountImage = 1;
 
+// Listen for 'Enter' key press on the inpTAG (search input)
+inpTAG.addEventListener('keypress', function(event) {
+    if (event.key === "Enter") { // Check if the key pressed is the Enter key
+        event.preventDefault(); // Prevent the default form submission (if applicable)
+        searchBTN.click(); // Programmatically click the search button to trigger the search
+    }
+});
+function generateGifHTML(result) {
+    loadCountImage = 1
     result.data.forEach(function (onebyone) {
         loadCountImage++
         html = '';
@@ -40,7 +50,7 @@ searchBTN.addEventListener('click', function () {
         setTimeout(() => {
             generateGifHTML(fetchedData)
 
-        }, 1000);
+        }, 500);
 
         return data;
     }).catch(function (error) {
